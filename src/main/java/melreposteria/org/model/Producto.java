@@ -31,7 +31,7 @@ public class Producto {
     
     
     @OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "pedidosId", referencedColumnName = "id")
+	@JoinColumn(name = "productosId", referencedColumnName = "id")
 	List<Pedido> pedidos = new ArrayList<Pedido>();
         
 
