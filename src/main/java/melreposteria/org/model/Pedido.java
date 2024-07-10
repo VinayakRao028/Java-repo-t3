@@ -25,13 +25,13 @@ public class Pedido {
 	@Column (nullable=false)
 	private Double precio;
 	private Long clientesId;
-	private Long pedidosId;
+	private Long productosId;
 	
 	
 	
 	
 	public Pedido(Long id, Double total, Double precio, String status, String direccionEnvio, String calleNumero,
-			int cp, String colonia, Long clientesId,Long pedidosId) {
+			int cp, String colonia, Long clientesId,Long productosId) {
 		
 		this.id = id;
 		this.total = total;
@@ -42,7 +42,7 @@ public class Pedido {
 		this.cp = cp;
 		this.colonia = colonia;
 		this.clientesId = clientesId;
-		this.pedidosId = pedidosId; 
+		this.productosId = productosId; 
 		
 	}//constructor
 
@@ -137,8 +137,8 @@ public class Pedido {
 	}
 	
 	
-	public Long getPedidosId() {
-		return pedidosId;
+	public Long getProductosId() {
+		return productosId;
 	}//GETTERS AND SETTERS
 
 
@@ -146,7 +146,7 @@ public class Pedido {
 	public String toString() {
 		return "Pedido [id=" + id + ", total=" + total + ", status=" + status + ", direccionEnvio=" + direccionEnvio
 				+ ", calleNumero=" + calleNumero + ", cp=" + cp + ", colonia=" + colonia + ", precio=" + precio
-				+ ", clientesId=" + clientesId + ", pedidosId=" + pedidosId + "]";
+				+ ", clientesId=" + clientesId + ", productosId=" + productosId + "]";
 	}
 
 
