@@ -8,16 +8,16 @@ INSERT INTO `melreposteria`.`clientes` (`calle_numero`, `codigo_postal`, `coloni
 
 -- Script para agregar datos de productos
 
-INSERT INTO `melreposteria`.`productos` ( `descripcion`, `imagen`, `nombre`, `precio`) VALUES
-('Sumérgete en el emocionante universo de la decoración, donde aprenderás a transformar tus creaciones en auténticas obras de arte comestibles.', "image.jpg",'Curso Decoración estilo Acuarela', '250'),
-('Aprende a decorar deliciosos postres con el divertido y colorido mundo de Bob Esponja y sus amigos.', "image.jpg",'Curso Decoración de personajes', '250'),
-('Descubre la tradición mexicana mientras aprendes a crear hermosas decoraciones inspiradas en esta emblemática figura del Día de los Muertos.', "image.jpg",'Curso Decoración de Catrinas', '250'),
-('Aprende el apasionante arte de la decoración donde crearás exquisitas flores de azúcar y otros adornos florales para embellecer tus dulces creaciones y sorprender a tus seres queridos.', "image.jpg",'Curso Decoración de flores', '250' ),
-('Archivo PDF Con 5 diseños diferentes de temporada\rIncluye diferentes medidas para etiquetas', "image.jpg",'Etiquetas Día de Muertos', '50' ),
-('Archivo PDF Con 5 diseños diferentes de temporada\rIncluye diferentes medidas para etiquetas', "image.jpg",'Etiquetas San Valentín', '50' ),
-('Archivo PDF Con 5 diseños diferentes de temporada\rIncluye diferentes medidas para etiquetas', "image.jpg",'Etiquetas Halloween', '50' ),
-('Archivo PDF Con 5 diseños diferentes de temporada\rIncluye diferentes medidas para etiquetas', "image.jpg",'Etiquetas 15 de Septiembre', '50' ),
-('Archivo PDF Con 5 diseños diferentes de temporada\r Incluye diferentes medidas para etiquetas', "image.jpg",'Etiquetas Día de las madres', '50' );
+INSERT INTO melreposteria.productos ( descripcion, imagen, nombre, precio) VALUES
+('Sumérgete en el emocionante universo de la decoración, donde aprenderás a transformar tus creaciones en auténticas obras de arte comestibles.', "src/productos/acuarela3.jpg",'Curso Decoración estilo Acuarela', '250'),
+('Aprende a decorar deliciosos postres con el divertido y colorido mundo de Bob Esponja y sus amigos.', "src/productos/bobesponjaHalloween.jpg",'Curso Decoración de personajes', '250'),
+('Descubre la tradición mexicana mientras aprendes a crear hermosas decoraciones inspiradas en esta emblemática figura del Día de los Muertos.', "src/productos/catrina2.jpg",'Curso Decoración de Catrinas', '250'),
+('Aprende el apasionante arte de la decoración donde crearás exquisitas flores de azúcar y otros adornos florales para embellecer tus dulces creaciones y sorprender a tus seres queridos.', "src/productos/flores.jpg",'Curso Decoración de flores', '250' ),
+('Archivo PDF Con 5 diseños diferentes de temporada\rIncluye diferentes medidas para etiquetas', "src/productos/dia de muertos.jpg",'Etiquetas Día de Muertos', '50' ),
+('Archivo PDF Con 5 diseños diferentes de temporada\rIncluye diferentes medidas para etiquetas', "src/productos/sanvalentin (2).jpg",'Etiquetas San Valentín', '50' ),
+('Archivo PDF Con 5 diseños diferentes de temporada\rIncluye diferentes medidas para etiquetas', "src/productos/halloween.jpg",'Etiquetas Halloween', '50' ),
+('Archivo PDF Con 5 diseños diferentes de temporada\rIncluye diferentes medidas para etiquetas', "src/productos/septiembre.png",'Etiquetas 15 de Septiembre', '50' ),
+('Archivo PDF Con 5 diseños diferentes de temporada\r Incluye diferentes medidas para etiquetas', "src/productos/mothers.jpg",'Etiquetas Día de las madres', '50' );
 
 
 -- Script para agregar pedidos
@@ -27,5 +27,3 @@ INSERT INTO `melreposteria`.`pedidos` (`calle_numero`, `colonia`, `cp`, `direcci
 ('2ª Priv. José Reyes Martínez 109','Gremial', '20030', '2ª Priv. José Reyes Martínez 109', 50, 'En proceso', 200),
 ('Cda de la providencia 21-2','San jeronimo lidice', '10200', 'CDA de la providencia 21-2', 50, 'Pendiente', 100),
 ('Agricultura #909','Rojo Gomez','42030', 'Agricultura #909', 250, 'En proceso', 300);
-
-
